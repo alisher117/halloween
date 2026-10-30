@@ -1,0 +1,6 @@
+node_modules
+dist
+frames-*
+*.mp4
+!public/video/*.mp4
+.vercel

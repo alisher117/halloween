@@ -1,0 +1,20 @@
+{
+  "name": "halloween-night",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "@gltf-transform/cli": "4.1.0",
+    "@types/three": "0.170.0",
+    "typescript": "5.6.3",
+    "vite": "5.4.10"
+  }
+}

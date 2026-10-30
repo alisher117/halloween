@@ -1,0 +1,19 @@
+:root { color-scheme: dark; --night: #14082a; --ember: #ff9a2e; }
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--night); overflow: hidden; }
+body { touch-action: none; -webkit-tap-highlight-color: transparent; }
+#stage { position: fixed; inset: 0; width: 100%; height: 100%; display: block; outline: none; }
+#stage.is-hovering-pumpkin { cursor: pointer; }
+
+#loader {
+  position: fixed; inset: 0; display: grid; place-items: center;
+  background: #000; transition: opacity .5s ease; pointer-events: none;
+}
+#loader span {
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--ember);
+  box-shadow: 0 0 24px 8px rgba(255, 140, 30, .55);
+  animation: candle 1.1s ease-in-out infinite alternate;
+}
+#loader.is-done { opacity: 0; }
+@keyframes candle { from { transform: scale(.7); opacity: .6; } to { transform: scale(1.15); opacity: 1; } }
